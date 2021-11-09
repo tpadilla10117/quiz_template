@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {questions} from '../utils/seed';
+import { questions } from '../utils/seed';
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
   const [ score, setScore ] = useState(0);
 
 /* Handles state changes when an answer on the quiz (.answer-section) is clicked: */
+/* Depends on the questions array from seed.js */
   const handleAnswerBtnClick = (isCorrect) => {
 
 	if(isCorrect === true) {

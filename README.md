@@ -4,12 +4,12 @@
 
 ## Deployment:
 
-
+Currently Unavailable!
 
 ## Usage Instructions:
 
 - 1) If cloned, ensure you install node modules with: `npm i node-modules` [https://www.npmjs.com/package/node-modules]
-- 2)
+- 2) Simply click the answer button you think is correct!
 
 ## Tech Stack:
 
@@ -17,7 +17,9 @@
 
 ## Limitations:
 
-- 
+- Currently no way to reset the game without a hard refresh -> Maybe ass a reset button?
+- App is not mobile-responsive
+- Perhaps a way to see your previous score once the quiz is complete
 
 ## Getting Started with Create React App
 
