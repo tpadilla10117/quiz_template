@@ -1,41 +1,36 @@
-import React, {useState} from 'react';
-import { HomePage} from './utils';
-
-require('dotenv').config();
-
-const apiKey = process.env.REACT_APP_WEATHER_KEY;
-
-/* console.log(process.env); */
-const BASE_URL = 'https://api.openweathermap.org/data/2.5';
+import React, { useState } from 'react';
+import {questions} from '../utils/seed';
+import './App.css';
 
 function App() {
 
-  const [query, setQuery] = useState('');
-  const [weather, setWeather] = useState({});
-
-/* To dynamically render weather data: */
-  const search = event => {
-    if(event.key === "Enter") {
-      fetch(`${BASE_URL}/weather?q=${query}&units=metric&APPID=${apiKey}`)
-        .then(res => res.json() )
-        .then(result => {
-          setQuery('');
-          setWeather(result);
-          console.log("Here is the weather:", result);
-        } );
-    }
-  };
 
 
   return (
-    <div className={ (typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'App warm' : 'App') : 'App' }>
+    <div className='app'>
+			{/* HINT: replace "false" with logic to display the 
+      score when the user has answered all the questions */}
+			{false ? (
+				<div className='score-section'>You scored 1 out of {questions.length}</div>
+			) : (
+				<>
+					<div className='question-section'>
+						<div className='question-count'>
+							<span>Question 1</span>/{questions.length}
+						</div>
+						<div className='question-text'>This is where the question text should go</div>
+					</div>
 
-      <HomePage query={query} setQuery={setQuery} weather={weather} setWeather={setWeather} search={search}
-        apiKey={apiKey}
-        BASE_URL={BASE_URL}
-      />
+					<div className='answer-section'>
+						<button>Answer 1</button>
+						<button>Answer 2</button>
+						<button>Answer 3</button>
+						<button>Answer 4</button>
+					</div>
 
-    </div>
+				</>
+			)}
+		</div>
   );
 }
 

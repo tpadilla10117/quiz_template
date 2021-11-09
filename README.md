@@ -1,26 +1,23 @@
 # App Description
 
-- weather-react is a simple weather-tracking web-application in which users can query/search for the weather conditions in a given location around the world.
+- A simple multiple choice quiz application
 
 ## Deployment:
 
-https://affectionate-bell-bcf7a5.netlify.app/
+
 
 ## Usage Instructions:
 
-- 1) In the searchbar, type in the name of a city who's conditions you wish to view.
-- 2) Click "return" or "enter" depending on the machine you're using.
-- 3) If city exists within dataset provided by OpenWeather API { https://openweathermap.org/api }, results will be displayed in the User Interface (UI)
-- 4) View Results!
+- 1) If cloned, ensure you install node modules with: `npm i node-modules` [https://www.npmjs.com/package/node-modules]
+- 2)
 
 ## Tech Stack:
 
 - Node.js, JS, React.js, HTML, CSS
-- OpenWeather API { https://openweathermap.org/api }
 
 ## Limitations:
 
-- As of 10/13/21, no error messages provided to users if query does not exist
+- 
 
 ## Getting Started with Create React App
 
