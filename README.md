@@ -13,7 +13,7 @@ https://affectionate-bell-bcf7a5.netlify.app/
 - 3) If city exists within dataset provided by OpenWeather API { https://openweathermap.org/api }, results will be displayed in the User Interface (UI)
 - 4) View Results!
 
-## Tech Stack:
+## Tech Stack
 
 - Node.js, JS, React.js, HTML, CSS
 - OpenWeather API { https://openweathermap.org/api }
