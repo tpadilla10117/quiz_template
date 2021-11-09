@@ -4,7 +4,13 @@ import './App.css';
 
 function App() {
 
+  const [ currentQuestion, setCurrentQuestion ] = useState(0);
 
+/* Handles state changes when an answer on the quiz (.answer-section) is clicked: */
+  const handleAnswerBtnClick = () => {
+    const nextQuestion = currentQuestion + 1;
+    setCurrentQuestion(nextQuestion);
+  };
 
   return (
     <div className='app'>
@@ -18,14 +24,13 @@ function App() {
 						<div className='question-count'>
 							<span>Question 1</span>/{questions.length}
 						</div>
-						<div className='question-text'>This is where the question text should go</div>
+						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 
 					<div className='answer-section'>
-						<button>Answer 1</button>
-						<button>Answer 2</button>
-						<button>Answer 3</button>
-						<button>Answer 4</button>
+						{questions[0].answerOptions.map( (answerOption) => (
+              <button onClick={handleAnswerBtnClick}>{answerOption.answerText}</button>
+            ))}
 					</div>
 
 				</>

@@ -8,6 +8,7 @@
                 { answerText: 'Paris', isCorrect: true },
                 { answerText: 'Dublin', isCorrect: false },
             ],
+            id: 1
         },
         {
             questionText: 'Who is CEO of Tesla?',
@@ -17,6 +18,7 @@
                 { answerText: 'Bill Gates', isCorrect: false },
                 { answerText: 'Tony Stark', isCorrect: false },
             ],
+            id: 2
         },
         {
             questionText: 'The iPhone was created by which company?',
@@ -26,6 +28,7 @@
                 { answerText: 'Amazon', isCorrect: false },
                 { answerText: 'Microsoft', isCorrect: false },
             ],
+            id: 3
         },
         {
             questionText: 'How many Harry Potter books are there?',
@@ -35,6 +38,7 @@
                 { answerText: '6', isCorrect: false },
                 { answerText: '7', isCorrect: true },
             ],
+            id: 4
         },
 
     ];
