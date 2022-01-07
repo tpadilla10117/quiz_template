@@ -20,6 +20,7 @@ Currently Unavailable!
 - Currently no way to reset the game without a hard refresh -> Maybe ass a reset button?
 - App is not mobile-responsive
 - Perhaps a way to see your previous score once the quiz is complete
+- a timer to answer before auto move to next page
 
 ## Getting Started with Create React App
 
